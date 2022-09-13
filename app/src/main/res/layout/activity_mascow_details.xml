@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Mascow_Details">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/actionbar_size_out"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:backgroundTint="@color/ofwhite"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/back_moscow"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripal_effect_rectangle"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                android:tint="@color/blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Moscow"
+                android:textColor="@color/blue"
+                android:textSize="19dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="1500dp"
+        android:layout_below="@id/actionbar_size_out">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mosko" />
+
+            <RelativeLayout
+                android:id="@+id/history_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="History"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/history_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/history"
+                    android:layout_marginTop="4dp"
+                    android:text="Moscow traces its history back to 1147, when it was mentioned in the chronicles for the first time. The early 12th century saw Kievan Rus disintegrate into many separate principalities. During this period, Prince Yury Dolgoruky of Rostov and Suzdal (1090–1157) began to build new towns and communities."
+                    android:textColor="#686868"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/history_txt"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/moscow2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/history_txt"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@+id/img2"
+                    android:text="Located in the eastern part of the Arabian Peninsula on the coast of the Arabian Gul hub of Western Asia. It is also a for passengers and cargo. Oil revenue helped accelerate the development of the city, which was already a major mercantile hub. "
+                    android:textColor="#686868"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+
+            <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                android:id="@+id/moscow_img"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/history_part"
+                app:autoPlay="true"
+                app:autoPlayDelay="3000"
+                app:carouselBackground="#00000000"
+                app:imageScaleType="centerCrop"
+                app:infiniteCarousel="true" />
+
+            <TextView
+                android:id="@+id/img_niche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moscow_img"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="The of 1908 struck the pearling boats of Dubai and the coastal emirates towards the end of the pearling season that year, resulting in the loss of a dozen boats and over 100 men. The disaster was a major setback for Dubai, with many families losing their breadwinner and merchants facing financial ruin. These losses came at a time when the tribes of the interior were also experiencing poverty. In a letter to the Sultan of Muscat in 1911, Butti laments, Misery and poverty are raging among them, with the result that they are struggling, looting and killing among themselves."
+                android:textColor="#686868"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="wrap_content"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:layout_below="@id/img_niche">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Located in the eastern part of the Arabian Peninsula on the coast of the Arabian Gul hub of Western Asia. It is also a for passengers and cargo. Oil revenue helped accelerate the development of the city, which was already a major mercantile hub. "
+                    android:textColor="#686868"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@+id/txt"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/moscow3" />
+
+                <Button
+                    android:id="@+id/form_moscow"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="@color/blue"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Book Your Trip"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

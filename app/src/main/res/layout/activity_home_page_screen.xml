@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Home_page_Screen">
+
+    <RelativeLayout
+        android:id="@+id/heder"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="Hear is Some Place"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/booking_tickets"
+            android:layout_width="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ripal_effect_rectangle">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_airplane_ticket_24"
+                android:tint="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heder">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                android:id="@+id/carousel"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:autoPlay="true"
+                app:autoPlayDelay="3000"
+                app:carouselBackground="#00000000"
+                app:imageScaleType="centerCrop"
+                app:infiniteCarousel="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@id/carousel">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--        <Button-->
+                <!--            android:id="@+id/book_trip_btn"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="55dp"-->
+                <!--            android:layout_alignParentBottom="true"-->
+                <!--            android:layout_centerHorizontal="true"-->
+                <!--            android:backgroundTint="@color/blue"-->
+                <!--            android:fontFamily="sans-serif-medium"-->
+                <!--            android:text="Book Your Trip"-->
+                <!--            android:textColor="@color/white" />-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

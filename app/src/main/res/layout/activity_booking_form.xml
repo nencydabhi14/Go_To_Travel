@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDFDF"
+    tools:context=".Booking_Form">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/actionbar_size"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/blue"
+        android:layout_height="?actionBarSize"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/back_form"
+                android:layout_width="40dp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Book your trip"
+                android:textColor="@color/white"
+                android:textSize="19dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Enter password"-->
+<!--        app:endIconMode="password_toggle">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/contains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar_size"
+        android:padding="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your name"
+            android:textColorHint="@color/blue"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="8dp"
+            android:hint="Mail Id"
+            android:textColorHint="@color/blue"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mail_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contact_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginTop="8dp"
+            android:hint="Contact number"
+            android:textColorHint="@color/blue"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/from_where"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_no"
+            android:layout_marginTop="8dp"
+            android:hint="From where ?"
+            android:textColorHint="@color/blue"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/from_where_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/go_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/from_where"
+            android:layout_marginTop="8dp"
+            android:hint="Go By(Bus,Train,Airplane)"
+            android:textColorHint="@color/blue"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/go_by_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/go_by"
+            android:layout_marginTop="8dp"
+            android:hint="Number Of Tickets"
+            android:textColorHint="@color/blue"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/person_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person"
+            android:layout_marginTop="8dp"
+            android:text="Total price = "
+            android:textColor="@color/blue"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/try_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/total_price"
+            android:text="1000"
+            android:textColor="@color/blue"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/total_price"
+            android:layout_marginTop="10dp"
+            android:background="#929292" />
+
+
+        <TextView
+            android:id="@+id/pay_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:text="Pay By"
+            android:textColor="@color/blue"
+            android:textSize="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/blue"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/cash_online_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_mode"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:checked="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Cash"
+                android:textColor="#979696"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:buttonTint="@color/blue"
+                android:fontFamily="sans-serif-medium"
+                android:text="Online"
+                android:textColor="#929292"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/contains">
+
+        <Button
+            android:id="@+id/book_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="sans-serif-medium"
+            android:text="Book"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/actionbar_size_out"-->
+<!--            android:layout_width="match_parent"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:backgroundTint="@color/ofwhite"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/ripal_effect_rectangle"-->
+<!--                android:padding="10dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:text="Book"-->
+<!--                    android:textColor="@color/blue"-->
+<!--                    android:textSize="19dp" />-->
+<!--            </RelativeLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+    </RelativeLayout>
+
+
+    <!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_below="@id/contains"-->
+<!--        android:textColor="@color/black"/>-->
+
+<!--    mobileno-->
+<!--whreugo-->
+<!--mail-->
+
+</RelativeLayout>

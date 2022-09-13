@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".America_Details">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/actionbar_size_out"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:backgroundTint="@color/ofwhite"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/back_America"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripal_effect_rectangle"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                android:tint="@color/blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="America"
+                android:textColor="@color/blue"
+                android:textSize="19dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="1500dp"
+        android:layout_below="@id/actionbar_size_out">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/america" />
+
+            <RelativeLayout
+                android:id="@+id/history_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="History"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/history_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/history"
+                    android:layout_marginTop="4dp"
+                    android:text="The United States of America (U.S.A. or USA), commonly known as the United States (U.S. or US) or America, is a country primarily located in North America. It consists of 50 states, a federal district, five major unincorporated territories, 326 Indian reservations, and nine minor outlying islands.[i] It is the world's third-largest country by both land and total area."
+                    android:textColor="#686868"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/history_txt"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ameica2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/history_txt"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@+id/img2"
+                    android:text="In the early days of colonization, many European settlers were subject to food shortages, disease, and attacks from Native Americans. Native Americans were also often at war with neighboring tribes and European settlers. In many cases, however, the nativetools and other European goods."
+                    android:textColor="#686868"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+
+            <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                android:id="@+id/america_Image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/history_part"
+                app:autoPlay="true"
+                app:autoPlayDelay="3000"
+                app:carouselBackground="#00000000"
+                app:imageScaleType="centerCrop"
+                app:infiniteCarousel="true" />
+
+            <TextView
+                android:id="@+id/img_niche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/america_Image"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="The United States has been a leader in technological innovation since the late 19th century and scientific research since the mid-20th century. Methods for producing interchangeable parts were developed by the U.S. War Department by the Federal Armories during the first half of the 19th century. This technology, along with the establishment of a machine tool industry, enabled the U.S. to have large-scale manufacturing of sewing machines, bicycles, and other items in the late 19th century and became known as the American system of manufacturing. Factory electrification in the early 20th century and introduction of the assembly line and other labor-saving techniques created the system of mass production."
+                android:textColor="#686868"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="wrap_content"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:layout_below="@id/img_niche">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="In 1876, Alexander Graham Bell was awarded the first U.S. patent for the telephone. Thomas Edison's research laboratory, one of the first of its kind, developed the phonograph, the first long-lasting light bulb, and the first viable movie camera.["
+                    android:textColor="#686868"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@+id/txt"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/america3" />
+
+                <Button
+                    android:id="@+id/form_america"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="@color/blue"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Book Your Trip"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
